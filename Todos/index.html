@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de contactos</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="cabinatelefonica.avif">
+</head>
+<body>
+    <h1 id="title">Lista de contactos</h1>
+  <form id="form">
+    <div class="form-input-container">
+      <label for="input-name">Nombre</label>
+      <input 
+        type="text" 
+        id="input-name" 
+        class="form-input"
+        name="input-name"
+        placeholder="Nombre y Apellido"
+      >
+      <p class="info">
+        Nombre y apellido. <br>
+        Ambos tienen que comenzar con mayusculas.
+      </p>
+    </div>
+    <div class="form-input-container">
+      <label for="input-number">Numero</label>
+      <input 
+        type="text" 
+        id="input-number"
+        class="form-input"
+        name="input-number" 
+        placeholder="Numero Telefonico"
+      >
+      <p class="info">
+        Un numero venezolanzo valido. <br>
+      </p>
+    </div>
+    <button id="form-btn" disabled>Crear</button>
+  </form>
+  <ul id="list">
+  </ul>
+  <div id="Cerrar">
+  <button id="cerrar-btn">Cerrar sesion</button>
+  </div>
+  <script src="dom.js"></script>
+</body>
+</html>
